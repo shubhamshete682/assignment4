@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({extended:false}));
 // db connection
-const connectionString="mongodb://127.0.0.1:27017/mongocrud1";
+const connectionString="mongodb+srv://shubham:shubham@cluster0.vuiwusc.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(connectionString)
   .then(res=> console.log("Database connected"))
